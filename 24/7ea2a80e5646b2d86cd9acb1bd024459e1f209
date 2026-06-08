@@ -1,0 +1,167 @@
+services/gateway-api/app/core/__init__.py
+  s_160b9678bccdca::t_8776d67625ef96 1
+services/gateway-api/app/api/tasks.py
+  s_160b9678bccdca::t_11c4e427245254 1-38
+package.json
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-20
+services/gateway-api/app/services/__init__.py
+  s_160b9678bccdca::t_11c4e427245254 1
+apps/portal-web/lib/permissions.ts
+  s_160b9678bccdca::t_aa36025d6cd827 1-53
+integrations/README.md
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-11
+apps/portal-web/next-env.d.ts
+  s_160b9678bccdca::t_aa36025d6cd827 1-2,4
+  s_160b9678bccdca::t_afc29f84184121 3,5-6
+docs/superpowers/plans/2026-06-08-access-key-model-configs.md
+  s_160b9678bccdca::t_8cec0d16943221 1-56
+apps/portal-web/app/admin/users/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-43
+data/outputs/.gitkeep
+  s_160b9678bccdca::t_49f8a8b93b5db6 1
+apps/portal-web/lib/types.ts
+  s_160b9678bccdca::t_cfb99ca1b3772b 65
+  s_160b9678bccdca::t_aa36025d6cd827 1-38,47-48
+  s_160b9678bccdca::t_f3cb1d100c8ef1 39,41-44,46,66,69-73,81-87
+  s_160b9678bccdca::t_906f0fa06fd27b 40,45,49-64,67-68,74-80,88
+services/gateway-api/app/services/repository.py
+  s_160b9678bccdca::t_11c4e427245254 1-28,31-34,58-71,74-134,137-144,147-157,217,221-245
+  s_160b9678bccdca::t_c9d30e657be0c2 29-30,35-57,72-73,135-136,145-146,158-216,218-220
+apps/portal-web/app/layout.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-14,16-19
+  s_160b9678bccdca::t_60e59b44d347cf 15
+data/uploads/.gitkeep
+  s_160b9678bccdca::t_49f8a8b93b5db6 1
+apps/portal-web/postcss.config.mjs
+  s_160b9678bccdca::t_aa36025d6cd827 1-9
+apps/portal-web/app/apps/video/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-27
+apps/portal-web/app/tasks/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-54
+services/gateway-api/app/api/dependencies.py
+  s_160b9678bccdca::t_11c4e427245254 1-24
+integrations/inkos-adapter/README.md
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-12
+apps/portal-web/app/admin/roles/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-26
+apps/portal-web/components/status-badge.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-26
+integrations/toonflow-adapter/README.md
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-11
+services/gateway-api/app/core/security.py
+  s_160b9678bccdca::t_a0f3617299f9dc 1-52
+services/gateway-api/app/api/__init__.py
+  s_160b9678bccdca::t_11c4e427245254 1
+apps/portal-web/next.config.mjs
+  s_160b9678bccdca::t_aa36025d6cd827 1,3-4
+  s_160b9678bccdca::t_555d25edf96b0a 2
+integrations/moneyprinter-adapter/README.md
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-12
+apps/portal-web/app/apps/moneyprinter/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-17
+apps/portal-web/app/apps/novel/page.tsx
+  s_160b9678bccdca::t_60e59b44d347cf 1-2,5-10,16,18,20,23-48
+  s_160b9678bccdca::t_aa36025d6cd827 3-4,11-15,17,19,21-22,49-53
+services/gateway-api/pyproject.toml
+  s_160b9678bccdca::t_11c4e427245254 1-21
+services/gateway-api/app/api/keys.py
+  s_160b9678bccdca::t_11c4e427245254 1-36,39-40
+  s_160b9678bccdca::t_c9d30e657be0c2 37-38
+apps/portal-web/app/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-21
+apps/portal-web/components/page-header.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-20
+services/gateway-api/app/main.py
+  s_160b9678bccdca::t_c9d30e657be0c2 4,28
+  s_160b9678bccdca::t_11c4e427245254 1-3,5-27,29-34
+services/gateway-api/app/core/permissions.py
+  s_160b9678bccdca::t_a0f3617299f9dc 1-177
+services/gateway-api/app/api/model_configs.py
+  s_160b9678bccdca::t_c9d30e657be0c2 1-83
+apps/portal-web/app/apps/novel/workbench/page.tsx
+  s_160b9678bccdca::t_9d7b680fd4ac86 1-171
+README.md
+  s_160b9678bccdca::t_49f8a8b93b5db6 2-52
+services/gateway-api/app/api/auth.py
+  s_160b9678bccdca::t_11c4e427245254 1-33
+apps/portal-web/app/settings/keys/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 6-7,24,26-28,139,301-303,318,529,577-578
+  s_160b9678bccdca::t_906f0fa06fd27b 33,39-42,44,47,53-55,57,59-61,63,68-70,72-74,76,81-84,115,132,304,306-307,310-311,314-317,319,330,369,377-378
+  s_160b9678bccdca::t_bcee68fe620244 196,348-353
+  s_160b9678bccdca::t_5a96796b4ea592 1-5,23,25,30-32,34-38,45-46,48-52,56,65,78,92,99-101,103-104,106-110,112,116-126,131,137-138,140-145,147-151,153-160,163-165,168-169,172-174,176-177,215-216,218-222,224-229,231-233,235-241,246-249,251-252,256-257,259-260,263-264,270-271,273,275-276,288-292,299-300,309,313,376,477-483,485-493,497-505,507,509-512,527-528,530-551,553-561,569-576
+  s_160b9678bccdca::t_cfb99ca1b3772b 8-22,29,43,58,62,64,66-67,71,75,77,79-80,85-91,93-98,102,105,111,113-114,127-130,133-136,146,152,161-162,166-167,170-171,175,178-195,197-214,217,223,230,234,242-245,250,253-255,258,261-262,265-269,272,274,277-287,293-298,305,308,312,320-329,331-347,354-368,370-375,379-476,484,494-496,506,508,513-526,552,562-568
+services/gateway-api/app/api/admin.py
+  s_160b9678bccdca::t_11c4e427245254 1-36
+services/gateway-api/app/models/schemas.py
+  s_160b9678bccdca::t_11c4e427245254 1-52,55-63,66-68,135-148
+  s_160b9678bccdca::t_c9d30e657be0c2 53-54,64-65,69-134
+services/gateway-api/app/tests/test_model_configs.py
+  s_160b9678bccdca::t_38a096ef225b0a 1-162
+.gitignore
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-13,15-19
+  s_160b9678bccdca::t_ce9da8a8840948 14
+apps/portal-web/tsconfig.json
+  s_160b9678bccdca::t_aa36025d6cd827 1-24
+services/gateway-api/app/tests/test_security.py
+  s_160b9678bccdca::t_8776d67625ef96 1-22
+apps/portal-web/lib/inkos-workspace.ts
+  s_160b9678bccdca::t_60e59b44d347cf 1-165
+apps/portal-web/app/dashboard/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-47
+services/gateway-api/app/api/modules.py
+  s_160b9678bccdca::t_11c4e427245254 1-24
+apps/portal-web/lib/api.ts
+  s_160b9678bccdca::t_aa36025d6cd827 1-17
+.env.example
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-4
+apps/portal-web/components/shell.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-76
+services/gateway-api/app/core/model_catalog.py
+  s_160b9678bccdca::t_c9d30e657be0c2 1-117
+docs/superpowers/plans/2026-06-08-phase-1-architecture.md
+  s_160b9678bccdca::t_6f7bdb3991f175 1-81
+docs/phase-1-plan.md
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-56
+.nvmrc
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-2
+services/gateway-api/app/models/__init__.py
+  s_160b9678bccdca::t_11c4e427245254 1-5,9-10,14-24,28-29,33-37
+  s_160b9678bccdca::t_c9d30e657be0c2 6-8,11-13,25-27,30-32
+services/gateway-api/app/__init__.py
+  s_160b9678bccdca::t_8776d67625ef96 1
+apps/portal-web/app/globals.css
+  s_160b9678bccdca::t_aa36025d6cd827 1-37
+services/gateway-api/app/services/serializers.py
+  s_160b9678bccdca::t_11c4e427245254 1,10-37,40-43,69-78
+  s_160b9678bccdca::t_c9d30e657be0c2 2-9,38-39,44-68
+apps/portal-web/package.json
+  s_160b9678bccdca::t_aa36025d6cd827 1-33
+apps/portal-web/app/login/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-33
+apps/portal-web/app/apps/xhs/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 1-17
+services/gateway-api/app/tests/test_permissions.py
+  s_160b9678bccdca::t_8776d67625ef96 1-64
+apps/portal-web/tailwind.config.ts
+  s_160b9678bccdca::t_aa36025d6cd827 1-20
+pnpm-workspace.yaml
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-3
+integrations/xhs-adapter/README.md
+  s_160b9678bccdca::t_49f8a8b93b5db6 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "247ea2a80e5646b2d86cd9acb1bd024459e1f209",
+  "prompts": {},
+  "sessions": {
+    "s_160b9678bccdca": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ea50c-e9c0-75a2-a7d1-15bd9ad6191b",
+        "model": "gpt-5.5"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
