@@ -35,3 +35,43 @@ select {
   font: inherit;
 }
 
+.inkos-tool-btn {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  border: 1px solid #1e293b;
+  background: #0b1116;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.inkos-tool-btn:hover {
+  background: #111827;
+}
+
+.inkos-action-btn {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+  background: #0b1116;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.inkos-action-btn:hover {
+  background: #111827;
+}
+
+.inkos-action-btn:disabled {
+  cursor: not-allowed;
+  color: #64748b;
+}
