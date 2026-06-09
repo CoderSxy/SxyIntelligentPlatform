@@ -1,0 +1,19 @@
+README.md
+  s_99a2f54eea263e::t_7025f765c994da 25-26,38-53,56,65-73,81-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "441b4d034a9a60e57124c5997440dcf6033bc272",
+  "prompts": {},
+  "sessions": {
+    "s_99a2f54eea263e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "6a23c67e-12a2-4a64-85dc-e71b327ea0fd",
+        "model": "default"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
