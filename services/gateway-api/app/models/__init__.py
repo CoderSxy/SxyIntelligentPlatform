@@ -8,7 +8,11 @@ from app.models.schemas import (
     ModelConfigPublic,
     ModelProviderPublic,
     ModulePublic,
+    PermissionGroupPublic,
+    ResetPasswordRequest,
+    RoleCreate,
     RolePublic,
+    RoleUpdate,
     ScenarioBindingCreate,
     ScenarioBindingPublic,
     ScenarioPublic,
@@ -16,6 +20,7 @@ from app.models.schemas import (
     TaskPublic,
     UserCreate,
     UserPublic,
+    UserUpdate,
 )
 
 __all__ = [
@@ -28,7 +33,11 @@ __all__ = [
     "ModelConfigPublic",
     "ModelProviderPublic",
     "ModulePublic",
+    "PermissionGroupPublic",
+    "ResetPasswordRequest",
+    "RoleCreate",
     "RolePublic",
+    "RoleUpdate",
     "ScenarioBindingCreate",
     "ScenarioBindingPublic",
     "ScenarioPublic",
@@ -36,4 +45,5 @@ __all__ = [
     "TaskPublic",
     "UserCreate",
     "UserPublic",
+    "UserUpdate",
 ]

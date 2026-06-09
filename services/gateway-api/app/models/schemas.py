@@ -34,10 +34,39 @@ class UserCreate(BaseModel):
     roles: list[str] = Field(default_factory=list)
 
 
+class UserUpdate(BaseModel):
+    display_name: str | None = None
+    roles: list[str] | None = None
+    disabled: bool | None = None
+
+
+class ResetPasswordRequest(BaseModel):
+    new_password: str = Field(min_length=8)
+
+
 class RolePublic(BaseModel):
     id: str
     name: str
     description: str
+    permissions: list[str]
+
+
+class RoleCreate(BaseModel):
+    id: str = Field(min_length=2, pattern=r"^[a-z][a-z0-9_]*$")
+    name: str = Field(min_length=1)
+    description: str = ""
+    permissions: list[str] = Field(default_factory=list)
+
+
+class RoleUpdate(BaseModel):
+    name: str | None = None
+    description: str | None = None
+    permissions: list[str] | None = None
+
+
+class PermissionGroupPublic(BaseModel):
+    module_id: str
+    module_name: str
     permissions: list[str]
 
 

@@ -10,7 +10,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
 if TYPE_CHECKING:
-    from app.services.auth_repository import AuthRepository
+    from app.services.auth_repository import AuthRepository, RoleRecord
 
 from app.core.permissions import DEFAULT_MODULES, permissions_for_roles
 from app.db.config import SessionLocal
@@ -154,27 +154,74 @@ class InMemoryRepository:
             lambda repo: repo.create_user(username, display_name, password, roles)
         )
 
+    def update_user(
+        self,
+        user_id: str,
+        display_name: str | None = None,
+        role_ids: list[str] | None = None,
+        disabled: bool | None = None,
+    ) -> UserRecord:
+        return self._with_auth_repo(
+            lambda repo: repo.update_user(user_id, display_name, role_ids, disabled)
+        )
+
+    def delete_user(self, user_id: str) -> None:
+        self._with_auth_repo(lambda repo: repo.delete_user(user_id))
+
+    def reset_password(self, user_id: str, new_password: str) -> None:
+        self._with_auth_repo(lambda repo: repo.reset_password(user_id, new_password))
+
     def change_password(self, user_id: str, old_password: str, new_password: str) -> None:
         self._with_auth_repo(
             lambda repo: repo.change_password(user_id, old_password, new_password)
         )
 
-    def list_roles(self) -> list[dict]:
+    def list_roles(self) -> list[RoleRecord]:
+        from app.services.auth_repository import RoleRecord
+
         try:
-            roles = self._with_auth_repo(lambda repo: repo.list_roles())
-            return [
-                {
-                    "id": role.id,
-                    "name": role.name,
-                    "description": role.description,
-                    "permissions": role.permissions,
-                }
-                for role in roles
-            ]
+            return self._with_auth_repo(lambda repo: repo.list_roles())
         except SQLAlchemyError:
             from app.core.permissions import DEFAULT_ROLES
 
-            return DEFAULT_ROLES
+            return [
+                RoleRecord(
+                    id=role["id"],
+                    name=role["name"],
+                    description=role["description"],
+                    permissions=role["permissions"],
+                    is_protected=role["id"] == "super_admin",
+                )
+                for role in DEFAULT_ROLES
+            ]
+
+    def get_role(self, role_id: str) -> RoleRecord | None:
+        return self._with_auth_repo(lambda repo: repo.get_role(role_id))
+
+    def create_role(
+        self,
+        role_id: str,
+        name: str,
+        description: str,
+        permissions: list[str],
+    ) -> RoleRecord:
+        return self._with_auth_repo(
+            lambda repo: repo.create_role(role_id, name, description, permissions)
+        )
+
+    def update_role(
+        self,
+        role_id: str,
+        name: str | None = None,
+        description: str | None = None,
+        permissions: list[str] | None = None,
+    ) -> RoleRecord:
+        return self._with_auth_repo(
+            lambda repo: repo.update_role(role_id, name, description, permissions)
+        )
+
+    def delete_role(self, role_id: str) -> None:
+        self._with_auth_repo(lambda repo: repo.delete_role(role_id))
 
     def list_modules(self) -> list[dict]:
         return DEFAULT_MODULES

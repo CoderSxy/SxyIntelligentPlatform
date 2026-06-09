@@ -177,6 +177,12 @@ class AuthRepository:
         roles = self._session.scalars(select(Role)).all()
         return [_role_to_record(role) for role in roles]
 
+    def get_role(self, role_id: str) -> RoleRecord | None:
+        role = self._session.get(Role, role_id)
+        if role is None:
+            return None
+        return _role_to_record(role)
+
     def create_role(
         self,
         role_id: str,
