@@ -1,7 +1,10 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy import text
 
 from app.api import admin, auth, keys, model_configs, modules, tasks
+from app.db.config import SessionLocal
+from app.db.seed import seed_roles_and_admin
 
 
 def create_app() -> FastAPI:
@@ -12,14 +15,29 @@ def create_app() -> FastAPI:
     )
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://127.0.0.1:3000", "http://localhost:3000"],
+        allow_origins=["http://127.0.0.1:3012", "http://localhost:3012"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
     )
 
+    @app.on_event("startup")
+    def on_startup() -> None:
+        session = SessionLocal()
+        try:
+            seed_roles_and_admin(session)
+        finally:
+            session.close()
+
     @app.get("/api/health")
     def health() -> dict[str, str]:
+        session = SessionLocal()
+        try:
+            session.execute(text("SELECT 1"))
+        except Exception:
+            raise HTTPException(status_code=503, detail="Database unavailable")
+        finally:
+            session.close()
         return {"status": "ok"}
 
     app.include_router(auth.router, prefix="/api")

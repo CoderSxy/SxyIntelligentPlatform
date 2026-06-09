@@ -33,6 +33,17 @@ python3.13 -m venv .venv
 npm run dev:api
 ```
 
+## MySQL 与数据库迁移
+
+本地开发需先启动 MySQL，并创建数据库 `sxy_portal`。复制 `.env.example` 为 `.env`，按需修改 `DATABASE_URL`。
+
+```bash
+cd services/gateway-api
+../../.venv/bin/alembic upgrade head
+```
+
+应用启动时会自动执行角色与管理员种子数据（幂等）。
+
 ## 默认管理员
 
 ```text
