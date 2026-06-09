@@ -1,4 +1,3 @@
-from app.core.permissions import permissions_for_roles
 from app.models import AccessKeyPublic, ModelConfigPublic, ScenarioBindingPublic, TaskPublic, UserPublic
 from app.services.repository import (
     AccessKeyRecord,
@@ -6,6 +5,7 @@ from app.services.repository import (
     ScenarioBindingRecord,
     TaskRecord,
     UserRecord,
+    repository,
 )
 
 
@@ -16,7 +16,7 @@ def mask_secret(secret: str) -> str:
 
 
 def serialize_user(user: UserRecord) -> UserPublic:
-    permissions = sorted(permissions_for_roles(user.roles))
+    permissions = sorted(repository.user_permissions(user))
     return UserPublic(
         id=user.id,
         username=user.username,

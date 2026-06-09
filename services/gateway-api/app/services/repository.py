@@ -1,11 +1,21 @@
 from __future__ import annotations
 
 import uuid
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
+from typing import TYPE_CHECKING, TypeVar
 
-from app.core.permissions import DEFAULT_MODULES, DEFAULT_ROLES, permissions_for_roles
-from app.core.security import hash_password, verify_password
+from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.orm import Session
+
+if TYPE_CHECKING:
+    from app.services.auth_repository import AuthRepository
+
+from app.core.permissions import DEFAULT_MODULES, permissions_for_roles
+from app.db.config import SessionLocal
+
+T = TypeVar("T")
 
 
 @dataclass
@@ -67,17 +77,71 @@ class TaskRecord:
 
 class InMemoryRepository:
     def __init__(self) -> None:
-        self.users: dict[str, UserRecord] = {}
         self.access_keys: dict[str, AccessKeyRecord] = {}
         self.model_configs: dict[str, ModelConfigRecord] = {}
         self.scenario_bindings: dict[str, ScenarioBindingRecord] = {}
         self.tasks: dict[str, TaskRecord] = {}
-        self.create_user(
+        self._offline_users: dict[str, UserRecord] = {}
+
+    def _auth_repo(self) -> tuple[AuthRepository, Session]:
+        from app.services.auth_repository import AuthRepository
+
+        session = SessionLocal()
+        return AuthRepository(session), session
+
+    def _with_auth_repo(self, fn: Callable[[AuthRepository], T]) -> T:
+        repo, session = self._auth_repo()
+        try:
+            return fn(repo)
+        finally:
+            session.close()
+
+    def _ensure_offline_admin(self) -> UserRecord:
+        for user in self._offline_users.values():
+            if user.username == "admin":
+                return user
+
+        admin = UserRecord(
+            id=str(uuid.uuid4()),
             username="admin",
             display_name="超级管理员",
-            password="Admin@123456",
+            password_hash="",
             roles=["super_admin"],
         )
+        self._offline_users[admin.id] = admin
+        return admin
+
+    def _offline_user_by_username(self, username: str) -> UserRecord | None:
+        self._ensure_offline_admin()
+        return next(
+            (user for user in self._offline_users.values() if user.username == username),
+            None,
+        )
+
+    def authenticate(self, username: str, password: str) -> UserRecord | None:
+        try:
+            return self._with_auth_repo(lambda repo: repo.authenticate(username, password))
+        except SQLAlchemyError:
+            return None
+
+    def get_user_by_username(self, username: str) -> UserRecord | None:
+        try:
+            return self._with_auth_repo(lambda repo: repo.get_user_by_username(username))
+        except SQLAlchemyError:
+            return self._offline_user_by_username(username)
+
+    def get_user_by_id(self, user_id: str) -> UserRecord | None:
+        try:
+            return self._with_auth_repo(lambda repo: repo.get_user_by_id(user_id))
+        except SQLAlchemyError:
+            return self._offline_users.get(user_id)
+
+    def list_users(self) -> list[UserRecord]:
+        try:
+            return self._with_auth_repo(lambda repo: repo.list_users())
+        except SQLAlchemyError:
+            self._ensure_offline_admin()
+            return list(self._offline_users.values())
 
     def create_user(
         self,
@@ -86,44 +150,35 @@ class InMemoryRepository:
         password: str,
         roles: list[str],
     ) -> UserRecord:
-        if self.get_user_by_username(username) is not None:
-            raise ValueError("username already exists")
-
-        user = UserRecord(
-            id=str(uuid.uuid4()),
-            username=username,
-            display_name=display_name,
-            password_hash=hash_password(password),
-            roles=roles,
+        return self._with_auth_repo(
+            lambda repo: repo.create_user(username, display_name, password, roles)
         )
-        self.users[user.id] = user
-        return user
-
-    def get_user_by_username(self, username: str) -> UserRecord | None:
-        return next(
-            (user for user in self.users.values() if user.username == username),
-            None,
-        )
-
-    def authenticate(self, username: str, password: str) -> UserRecord | None:
-        user = self.get_user_by_username(username)
-        if user is None or user.disabled:
-            return None
-        if not verify_password(password, user.password_hash):
-            return None
-        return user
-
-    def list_users(self) -> list[UserRecord]:
-        return list(self.users.values())
 
     def list_roles(self) -> list[dict]:
-        return DEFAULT_ROLES
+        try:
+            roles = self._with_auth_repo(lambda repo: repo.list_roles())
+            return [
+                {
+                    "id": role.id,
+                    "name": role.name,
+                    "description": role.description,
+                    "permissions": role.permissions,
+                }
+                for role in roles
+            ]
+        except SQLAlchemyError:
+            from app.core.permissions import DEFAULT_ROLES
+
+            return DEFAULT_ROLES
 
     def list_modules(self) -> list[dict]:
         return DEFAULT_MODULES
 
     def user_permissions(self, user: UserRecord) -> set[str]:
-        return permissions_for_roles(user.roles)
+        try:
+            return self._with_auth_repo(lambda repo: repo.user_permissions(user))
+        except SQLAlchemyError:
+            return permissions_for_roles(user.roles)
 
     def create_access_key(
         self,
