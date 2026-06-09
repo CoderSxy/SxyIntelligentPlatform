@@ -1,0 +1,25 @@
+docs/superpowers/specs/2026-06-09-auth-rbac-design.md
+  s_59c5ce2886ea76::t_64bc49177be8cf 1-207,209-375
+  s_59c5ce2886ea76::t_9a2541250f2335 208
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "43bff19cb1fda8046bd3c438c38787d93e288153",
+  "prompts": {},
+  "humans": {
+    "h_d083fb1648bfd3": {
+      "author": "sxy <545231960@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_59c5ce2886ea76": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "bb5d9e86-8e27-4e2c-bb0d-0da676d628fd",
+        "model": "default"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
