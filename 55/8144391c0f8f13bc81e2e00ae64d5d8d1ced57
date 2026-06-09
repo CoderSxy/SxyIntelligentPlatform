@@ -1,0 +1,25 @@
+apps/portal-web/next.config.mjs
+  s_9c94809e8224f3::t_33812e8093c4aa 2-6
+.env.example
+  s_9c94809e8224f3::t_bee719a6d05564 1
+apps/portal-web/middleware.ts
+  s_9c94809e8224f3::t_6df400fbad3f67 1-19
+apps/portal-web/lib/api.ts
+  s_9c94809e8224f3::t_aeb5baada6ffb4 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "558144391c0f8f13bc81e2e00ae64d5d8d1ced57",
+  "prompts": {},
+  "sessions": {
+    "s_9c94809e8224f3": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "32f30436-649a-4c9e-8be0-afc8de100f8f",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
