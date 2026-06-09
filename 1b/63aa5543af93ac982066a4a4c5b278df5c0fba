@@ -1,0 +1,24 @@
+apps/portal-web/app/layout.tsx
+  s_61f36880efbbf4::t_a3666a7a002f81 18-20
+  s_61f36880efbbf4::t_e1f9161adf792b 2-3
+apps/portal-web/components/auth-provider.tsx
+  s_61f36880efbbf4::t_dcb4b4ac726c7a 1-15
+apps/portal-web/lib/auth-store.ts
+  s_61f36880efbbf4::t_e29fbade49c1b6 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "1b63aa5543af93ac982066a4a4c5b278df5c0fba",
+  "prompts": {},
+  "sessions": {
+    "s_61f36880efbbf4": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b559d37b-0856-4d42-bc0b-75a785bc8315",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
