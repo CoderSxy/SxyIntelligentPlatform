@@ -1,0 +1,25 @@
+services/gateway-api/app/core/cookies.py
+  s_ba259b97a708a1::t_3c99c6e19853e8 1-21
+services/gateway-api/app/tests/test_security.py
+  s_ba259b97a708a1::t_bf53bac2998ceb 29-36
+  s_ba259b97a708a1::t_66564771a0ca4a 1-7
+services/gateway-api/app/core/security.py
+  s_ba259b97a708a1::t_46da7758325ea6 10-15
+  s_ba259b97a708a1::t_71cefd08a61293 59-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "19dfdac9cebe2a1e956cdce464efe7e97a01403a",
+  "prompts": {},
+  "sessions": {
+    "s_ba259b97a708a1": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "d999d1f8-0e20-402d-99dd-6c6c031f3913",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
