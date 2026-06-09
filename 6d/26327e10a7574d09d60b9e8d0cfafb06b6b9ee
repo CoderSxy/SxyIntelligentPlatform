@@ -1,0 +1,19 @@
+apps/portal-web/lib/api.ts
+  s_b129a40dd22890::t_12b3f2d38a91b0 3-12,14-15,17-18,24-25,28,32-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "6d26327e10a7574d09d60b9e8d0cfafb06b6b9ee",
+  "prompts": {},
+  "sessions": {
+    "s_b129a40dd22890": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "e9b14f4f-1dd3-4c4c-be00-4dfc6f21e58f",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
