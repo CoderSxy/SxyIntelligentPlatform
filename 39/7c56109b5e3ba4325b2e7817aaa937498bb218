@@ -1,0 +1,19 @@
+services/gateway-api/pyproject.toml
+  s_317e5e49e4b48d::t_dff103bfcecaf9 10-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "397c56109b5e3ba4325b2e7817aaa937498bb218",
+  "prompts": {},
+  "sessions": {
+    "s_317e5e49e4b48d": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "51739701-3380-4524-8254-0143c70adece",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
