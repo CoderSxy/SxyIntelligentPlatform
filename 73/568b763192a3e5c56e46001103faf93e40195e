@@ -1,0 +1,24 @@
+services/gateway-api/app/tests/test_auth_repository.py
+  s_88ee085271cc69::t_38b5b8125de920 1-27
+services/gateway-api/app/services/auth_repository.py
+  s_88ee085271cc69::t_2287a0ea4dfff3 237-238
+  s_88ee085271cc69::t_c75b249a3ae6b9 1-236,239-259
+services/gateway-api/app/tests/conftest.py
+  s_88ee085271cc69::t_a888ba87e94e85 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "73568b763192a3e5c56e46001103faf93e40195e",
+  "prompts": {},
+  "sessions": {
+    "s_88ee085271cc69": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "063a5e1b-785b-470a-975e-231ac04ccbab",
+        "model": "default"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
