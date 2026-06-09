@@ -2,7 +2,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
 
-from app.api import admin, auth, keys, model_configs, modules, tasks
+from app.api import admin, auth, keys, model_configs, modules, novel, tasks
+from app.services.inkos_studio import start_studio_process
 from app.db.config import SessionLocal
 from app.db.seed import seed_roles_and_admin
 
@@ -28,6 +29,11 @@ def create_app() -> FastAPI:
             seed_roles_and_admin(session)
         finally:
             session.close()
+        try:
+            start_studio_process()
+        except Exception:
+            # Studio can be started manually; novel routes will retry on demand.
+            pass
 
     @app.get("/api/health")
     def health() -> dict[str, str]:
@@ -46,6 +52,7 @@ def create_app() -> FastAPI:
     app.include_router(model_configs.router, prefix="/api")
     app.include_router(tasks.router, prefix="/api")
     app.include_router(admin.router, prefix="/api")
+    app.include_router(novel.router, prefix="/api")
     return app
 
 

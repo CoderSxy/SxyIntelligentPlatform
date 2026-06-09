@@ -15,5 +15,7 @@ __pycache__/
 data/sqlite/*.db
 data/uploads/*
 data/outputs/*
+data/portal-novel/*
+!data/portal-novel/.gitkeep
 !data/uploads/.gitkeep
 !data/outputs/.gitkeep

@@ -1,13 +1,12 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { CheckCircle2, Pencil, Plus, Save, Trash2, Zap } from "lucide-react";
 
 import { PageHeader } from "@/components/page-header";
 import { Shell } from "@/components/shell";
+import { loadPortalModelConfig, savePortalModelConfig } from "@/lib/portal-model-config";
 import { AccessKey, ModelConfig, ModelType } from "@/lib/types";
-
-const STORAGE_KEY = "sxy-model-service-config";
 
 const providers = [
   { name: "OpenAI", baseUrl: "https://api.openai.com/v1", protocol: "openai-responses", checkModel: "gpt-4.1-mini" },
@@ -136,9 +135,18 @@ function capabilityFromType(type: ModelType): ModelConfig["capability"] {
   return "novel_writing";
 }
 
+function readInitialConfig() {
+  const stored = loadPortalModelConfig();
+  return {
+    keys: stored.keys.length ? stored.keys : starterKeys,
+    models: stored.models.length ? stored.models : starterModels
+  };
+}
+
 export default function AccessKeysPage() {
-  const [keys, setKeys] = useState<AccessKey[]>(starterKeys);
-  const [models, setModels] = useState<ModelConfig[]>(starterModels);
+  const [keys, setKeys] = useState<AccessKey[]>(() => readInitialConfig().keys);
+  const [models, setModels] = useState<ModelConfig[]>(() => readInitialConfig().models);
+  const skipInitialPersist = useRef(true);
   const [editingKeyId, setEditingKeyId] = useState<string | null>(null);
   const [editingModelId, setEditingModelId] = useState<string | null>(null);
   const [keyForm, setKeyForm] = useState<KeyForm>(emptyKeyForm);
@@ -146,19 +154,11 @@ export default function AccessKeysPage() {
   const [message, setMessage] = useState("这里只配置 Key 和模型；小说创作或小说转视频使用时，再按模型能力过滤可选项。");
 
   useEffect(() => {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return;
-    try {
-      const parsed = JSON.parse(raw) as { keys?: AccessKey[]; models?: ModelConfig[] };
-      if (parsed.keys) setKeys(parsed.keys);
-      if (parsed.models) setModels(parsed.models);
-    } catch {
-      setMessage("本地配置读取失败，已使用默认配置。");
+    if (skipInitialPersist.current) {
+      skipInitialPersist.current = false;
+      return;
     }
-  }, []);
-
-  useEffect(() => {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ keys, models }));
+    savePortalModelConfig({ keys, models });
   }, [keys, models]);
 
   const keyById = useMemo(() => new Map(keys.map((key) => [key.id, key])), [keys]);
@@ -205,12 +205,46 @@ export default function AccessKeysPage() {
     };
 
     setKeys((current) => (editingKeyId ? current.map((key) => (key.id === editingKeyId ? nextKey : key)) : [nextKey, ...current]));
-    setModels((current) =>
-      current.map((model) =>
+    setModels((current) => {
+      const synced = current.map((model) =>
         model.accessKeyId === nextKey.id ? { ...model, provider: nextKey.provider, accessKeyLabel: nextKey.label } : model
-      )
-    );
-    setMessage(editingKeyId ? "Key 配置已更新。" : "Key 配置已新增。");
+      );
+      if (!nextKey.checkModel?.trim()) return synced;
+
+      const existing = synced.find(
+        (model) => model.accessKeyId === nextKey.id && (model.modelType === "llm" || model.capabilities?.includes("text"))
+      );
+      if (existing) {
+        return synced.map((model) =>
+          model.id === existing.id
+            ? {
+                ...model,
+                modelName: nextKey.checkModel!,
+                displayName: model.displayName || `${nextKey.provider} ${nextKey.checkModel}`,
+                enabled: true
+              }
+            : model
+        );
+      }
+
+      return [
+        {
+          id: `model-auto-${nextKey.id}`,
+          provider: nextKey.provider,
+          modelType: "llm",
+          modelName: nextKey.checkModel,
+          displayName: `${nextKey.provider} ${nextKey.checkModel}`,
+          capability: "novel_writing",
+          capabilities: ["text"],
+          accessKeyId: nextKey.id,
+          accessKeyLabel: nextKey.label,
+          defaultParams: {},
+          enabled: true
+        },
+        ...synced
+      ];
+    });
+    setMessage(editingKeyId ? "Key 配置已更新。" : "Key 配置已新增，已自动绑定默认 LLM 模型。");
     resetKeyForm();
   }
 

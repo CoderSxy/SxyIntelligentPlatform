@@ -4,7 +4,7 @@ export const portalModules: PortalModule[] = [
   {
     id: "novel",
     name: "AI小说创作",
-    description: "进入 inkos 小说工作台，管理世界观、角色、章节和导出。",
+    description: "小说创作工作台，数据保存在浏览器 IndexedDB，Agent 通过服务端运行时执行。",
     status: "active",
     href: "/apps/novel",
     requiredPermission: "novel:view"
