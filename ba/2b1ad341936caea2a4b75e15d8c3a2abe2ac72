@@ -1,0 +1,21 @@
+apps/portal-web/components/shell.tsx
+  s_e92d8ea637ddc0::t_7741995c434453 1-2,4,11,16-17,33-41,48,52,82-91
+apps/portal-web/app/dashboard/page.tsx
+  s_e92d8ea637ddc0::t_c9139925d473d9 1-2,8-9,12-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "ba2b1ad341936caea2a4b75e15d8c3a2abe2ac72",
+  "prompts": {},
+  "sessions": {
+    "s_e92d8ea637ddc0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "3756c9bf-f037-441d-b3e3-05a48da55999",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
