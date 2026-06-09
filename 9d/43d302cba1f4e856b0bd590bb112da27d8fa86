@@ -1,0 +1,19 @@
+apps/portal-web/app/login/page.tsx
+  s_74a9860953803a::t_7cdf22d91caa71 1-7,10-30,33-36,38-40,45-48,55-56,58-59,62-65,67-68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "9d43d302cba1f4e856b0bd590bb112da27d8fa86",
+  "prompts": {},
+  "sessions": {
+    "s_74a9860953803a": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "cd89cd94-0805-42b3-8c0f-642a8bae4ea2",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
