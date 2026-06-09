@@ -9,18 +9,6 @@ class LoginRequest(BaseModel):
     password: str = Field(min_length=1)
 
 
-class LoginResponse(BaseModel):
-    access_token: dict
-    user: "UserPublic"
-
-
-class UserCreate(BaseModel):
-    username: str = Field(min_length=2)
-    display_name: str = Field(min_length=1)
-    password: str = Field(min_length=8)
-    roles: list[str] = Field(default_factory=list)
-
-
 class UserPublic(BaseModel):
     id: str
     username: str
@@ -28,6 +16,22 @@ class UserPublic(BaseModel):
     roles: list[str]
     permissions: list[str]
     disabled: bool = False
+
+
+class LoginResponse(BaseModel):
+    user: UserPublic
+
+
+class ChangePasswordRequest(BaseModel):
+    old_password: str = Field(min_length=1)
+    new_password: str = Field(min_length=8)
+
+
+class UserCreate(BaseModel):
+    username: str = Field(min_length=2)
+    display_name: str = Field(min_length=1)
+    password: str = Field(min_length=8)
+    roles: list[str] = Field(default_factory=list)
 
 
 class RolePublic(BaseModel):

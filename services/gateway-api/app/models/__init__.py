@@ -1,6 +1,7 @@
 from app.models.schemas import (
     AccessKeyCreate,
     AccessKeyPublic,
+    ChangePasswordRequest,
     LoginRequest,
     LoginResponse,
     ModelConfigCreate,
@@ -20,6 +21,7 @@ from app.models.schemas import (
 __all__ = [
     "AccessKeyCreate",
     "AccessKeyPublic",
+    "ChangePasswordRequest",
     "LoginRequest",
     "LoginResponse",
     "ModelConfigCreate",

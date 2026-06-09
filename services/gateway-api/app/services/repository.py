@@ -154,6 +154,11 @@ class InMemoryRepository:
             lambda repo: repo.create_user(username, display_name, password, roles)
         )
 
+    def change_password(self, user_id: str, old_password: str, new_password: str) -> None:
+        self._with_auth_repo(
+            lambda repo: repo.change_password(user_id, old_password, new_password)
+        )
+
     def list_roles(self) -> list[dict]:
         try:
             roles = self._with_auth_repo(lambda repo: repo.list_roles())
