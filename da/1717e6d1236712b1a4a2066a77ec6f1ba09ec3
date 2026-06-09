@@ -1,0 +1,19 @@
+apps/portal-web/app/admin/roles/page.tsx
+  s_259722b5796f58::t_f2cf10de47a654 1-5,8-29,31-45,48-184,187-382,384-422,426-462
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "da1717e6d1236712b1a4a2066a77ec6f1ba09ec3",
+  "prompts": {},
+  "sessions": {
+    "s_259722b5796f58": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "f1a81869-ecca-4a57-9786-fb204402117e",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
