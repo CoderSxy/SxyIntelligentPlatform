@@ -1,0 +1,19 @@
+apps/portal-web/app/admin/users/page.tsx
+  s_1d3cf00d6034c8::t_03627229893f7b 1-5,8-32,34-43,46-185,191-200,202-214,223,227-237,239-296,300-424,429-466
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "44e5c8379c3de9ab3fc261b34dad676f3328cfa9",
+  "prompts": {},
+  "sessions": {
+    "s_1d3cf00d6034c8": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "83a1836d-9f18-49b2-ba2c-a4072f60a20c",
+        "model": "default"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
