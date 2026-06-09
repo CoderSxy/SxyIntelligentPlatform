@@ -1,0 +1,40 @@
+.env.example
+  s_59c5ce2886ea76::t_23d64d8cd6ce71 2
+services/gateway-api/app/core/settings.py
+  s_214219da72ea2b::t_a5b6a762df7f7c 4-21
+apps/portal-web/middleware.ts
+  s_59c5ce2886ea76::t_0ef24be078a147 3
+apps/portal-web/next.config.mjs
+  s_59c5ce2886ea76::t_5747d6387958ba 2-3,6-11
+services/gateway-api/alembic/env.py
+  s_214219da72ea2b::t_703f3b547b50d0 36-37,39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "25adb9f03cbcc4ec53ae1a6654f2fbeb7a585982",
+  "prompts": {},
+  "humans": {
+    "h_d083fb1648bfd3": {
+      "author": "sxy <545231960@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_214219da72ea2b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "14476dd8-3504-41bf-85a3-bd2c8d9910a0",
+        "model": "default"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    },
+    "s_59c5ce2886ea76": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "bb5d9e86-8e27-4e2c-bb0d-0da676d628fd",
+        "model": "default"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
