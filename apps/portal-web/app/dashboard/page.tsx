@@ -1,12 +1,16 @@
+"use client";
+
 import Link from "next/link";
 
 import { PageHeader } from "@/components/page-header";
 import { Shell } from "@/components/shell";
 import { StatusBadge } from "@/components/status-badge";
-import { demoUser, visibleModules } from "@/lib/permissions";
+import { useAuthStore } from "@/lib/auth-store";
+import { visibleModules } from "@/lib/permissions";
 
 export default function DashboardPage() {
-  const modules = visibleModules(demoUser);
+  const user = useAuthStore((s) => s.user);
+  const modules = user ? visibleModules(user) : [];
 
   return (
     <Shell>
@@ -44,4 +48,3 @@ export default function DashboardPage() {
     </Shell>
   );
 }
-

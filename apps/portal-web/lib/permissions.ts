@@ -1,13 +1,5 @@
 import { PortalModule, User } from "@/lib/types";
 
-export const demoUser: User = {
-  id: "local-admin",
-  username: "admin",
-  displayName: "超级管理员",
-  roles: ["super_admin"],
-  permissions: ["*"]
-};
-
 export const portalModules: PortalModule[] = [
   {
     id: "novel",
