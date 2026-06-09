@@ -1,0 +1,20 @@
+apps/portal-web/app/apps/novel/page.tsx
+  s_160b9678bccdca::t_aa36025d6cd827 7
+  s_160b9678bccdca::t_60e59b44d347cf 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "8a7caecb75140f290484233ea3fb70864ffae840",
+  "prompts": {},
+  "sessions": {
+    "s_160b9678bccdca": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ea50c-e9c0-75a2-a7d1-15bd9ad6191b",
+        "model": "gpt-5.5"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
