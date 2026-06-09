@@ -1,0 +1,21 @@
+services/gateway-api/app/tests/test_db_models.py
+  s_b4bc1c7fdf85e7::t_f9500ac703eab0 1-8
+services/gateway-api/app/db/models.py
+  s_b4bc1c7fdf85e7::t_3ca3732b1b0afa 1-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "615afb143d583097f9e0c0c7b247b6d78286184e",
+  "prompts": {},
+  "sessions": {
+    "s_b4bc1c7fdf85e7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "0e2a35aa-bb77-4707-84b8-fa2d8051de6a",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
