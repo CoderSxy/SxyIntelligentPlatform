@@ -10,6 +10,7 @@ import {
   ListChecks,
   LogOut,
   ShieldCheck,
+  UserCog,
   UsersRound
 } from "lucide-react";
 
@@ -20,6 +21,7 @@ const navItems = [
   { href: "/dashboard", label: "仪表盘", icon: Gauge, permission: "*" },
   { href: "/tasks", label: "任务中心", icon: ListChecks, permission: "task:view_own" },
   { href: "/settings/keys", label: "AccessKey", icon: KeyRound, permission: "key:view" },
+  { href: "/settings/profile", label: "个人设置", icon: UserCog, permission: "*" },
   { href: "/admin/users", label: "用户管理", icon: UsersRound, permission: "user:view" },
   { href: "/admin/roles", label: "角色权限", icon: ShieldCheck, permission: "role:view" }
 ];
