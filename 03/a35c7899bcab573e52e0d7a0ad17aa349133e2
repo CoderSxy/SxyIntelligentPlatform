@@ -1,0 +1,28 @@
+services/gateway-api/app/services/repository.py
+  s_c8cd1c347d8cc4::t_5a11f6da353b20 4,7,9,15,17-18
+  s_c8cd1c347d8cc4::t_e2ea0796f5b164 86
+  s_c8cd1c347d8cc4::t_37eff87a777294 11-13
+  s_c8cd1c347d8cc4::t_038581f6299f61 87-88
+  s_c8cd1c347d8cc4::t_9cdd43dabb07b1 84,92,95,98-102,104,106-109,111-112,114-115,117,122-124,129-131,135-137,141-155,159,169-172,179-181
+  s_c8cd1c347d8cc4::t_0e9e6a3a412dcd 10,16,89-91,93-94,96-97,126-128,132-134,140,158,160-168,178
+services/gateway-api/app/api/dependencies.py
+  s_c8cd1c347d8cc4::t_68c4a7648d7445 1-2,5-6,10-29
+services/gateway-api/app/services/serializers.py
+  s_c8cd1c347d8cc4::t_f62704a29dd7ca 8,19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "03a35c7899bcab573e52e0d7a0ad17aa349133e2",
+  "prompts": {},
+  "sessions": {
+    "s_c8cd1c347d8cc4": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "296dcd1e-7150-42a2-8ff3-1d6f4746cc3d",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
