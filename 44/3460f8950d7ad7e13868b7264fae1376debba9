@@ -1,0 +1,31 @@
+services/gateway-api/alembic/versions/d1fefdd9713b_initial_auth_tables.py
+  s_9eca663b847700::t_8046a32c3aee3e 1-69
+services/gateway-api/app/db/seed.py
+  s_9eca663b847700::t_a71dc2021b36b1 1-45
+services/gateway-api/alembic.ini
+  s_9eca663b847700::t_b7018c61ea7c25 1-88,91-150
+  s_9eca663b847700::t_506ed7304ebb98 89-90
+services/gateway-api/alembic/README
+  s_9eca663b847700::t_b7018c61ea7c25 1
+services/gateway-api/alembic/script.py.mako
+  s_9eca663b847700::t_b7018c61ea7c25 1-28
+services/gateway-api/alembic/env.py
+  s_9eca663b847700::t_ed48094dac2adc 4,6-9,15,17,21,35,43
+  s_9eca663b847700::t_b7018c61ea7c25 1-3,5,10-14,16,18-20,22-34,36-42,44-52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "443460f8950d7ad7e13868b7264fae1376debba9",
+  "prompts": {},
+  "sessions": {
+    "s_9eca663b847700": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "79326f77-f384-4eea-8940-2531b2ab30d2",
+        "model": "composer-2.5-fast"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
