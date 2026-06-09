@@ -13,8 +13,7 @@
     "dev:web": "npm --workspace @sxy/portal-web run dev",
     "build:web": "npm --workspace @sxy/portal-web run build",
     "typecheck:web": "npm --workspace @sxy/portal-web run typecheck",
-    "dev:api": "python3.13 -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --app-dir services/gateway-api",
+    "dev:api": "python3.13 -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8023 --app-dir services/gateway-api",
     "test:api": "PYTHONPATH=services/gateway-api python3.13 -m pytest services/gateway-api/app/tests -q"
   }
 }
-

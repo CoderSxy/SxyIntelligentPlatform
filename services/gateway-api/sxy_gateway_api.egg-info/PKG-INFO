@@ -6,6 +6,10 @@ Requires-Python: >=3.13
 Requires-Dist: fastapi>=0.115.0
 Requires-Dist: uvicorn[standard]>=0.30.0
 Requires-Dist: pydantic>=2.8.0
+Requires-Dist: sqlalchemy>=2.0.0
+Requires-Dist: alembic>=1.13.0
+Requires-Dist: pymysql>=1.1.0
+Requires-Dist: pyjwt>=2.8.0
 Provides-Extra: dev
 Requires-Dist: pytest>=8.0.0; extra == "dev"
 Requires-Dist: httpx>=0.27.0; extra == "dev"
