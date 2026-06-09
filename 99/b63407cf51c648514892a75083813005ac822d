@@ -1,0 +1,244 @@
+apps/portal-web/package.json
+  s_fa9fe0b23f4c2b::t_b54f86588b7c89 18-19
+services/gateway-api/pyproject.toml
+  s_fa9fe0b23f4c2b::t_6d4045629f9a37 14
+apps/portal-web/components/inkos-model-selector.tsx
+  s_fa9fe0b23f4c2b::t_5e4dacefbfa768 43
+  s_fa9fe0b23f4c2b::t_0d671fbbfdfef8 1-12,14-16,18-42,44-88
+  s_fa9fe0b23f4c2b::t_e097e3881b2c03 13,17
+apps/portal-web/lib/use-portal-novel-models.ts
+  s_fa9fe0b23f4c2b::t_386a12732bce18 58
+  s_fa9fe0b23f4c2b::t_5d72652c46abb7 43,47
+  s_fa9fe0b23f4c2b::t_d70da2610ffbab 9,19,23-25
+  s_fa9fe0b23f4c2b::t_21e67c96bca961 1-6,8,10-18,20-22,26-41,49-57,59
+  s_fa9fe0b23f4c2b::t_9f1cf1cf3803d5 7
+  s_fa9fe0b23f4c2b::t_75488a9f0a3e34 42,44-46,48
+apps/portal-web/components/inkos-chapter-reader.tsx
+  s_fa9fe0b23f4c2b::t_96a5ff81a8a540 37-41
+  s_fa9fe0b23f4c2b::t_a8ae069cd25a73 1-3,5-36,42-131
+  s_fa9fe0b23f4c2b::t_7d0c72f1b96d80 4
+apps/portal-web/components/inkos-markdown.tsx
+  s_fa9fe0b23f4c2b::t_1b58d8c49764e2 1-38
+apps/portal-web/components/inkos-session-sidebar.tsx
+  s_fa9fe0b23f4c2b::t_7d3b4e45531f6e 1-114
+apps/portal-web/components/inkos-book-list.tsx
+  s_fa9fe0b23f4c2b::t_6dc746cf34cc37 1-79,92,94-134
+  s_fa9fe0b23f4c2b::t_b0ea860a46c33c 80-91,93
+apps/portal-web/components/inkos-agent-feed.tsx
+  s_fa9fe0b23f4c2b::t_0137f26177ab7f 58
+  s_fa9fe0b23f4c2b::t_19ecf35f8b3287 5
+  s_fa9fe0b23f4c2b::t_fda0c74da622c9 1-4,6-57,59-104
+services/gateway-api/app/core/inkos_settings.py
+  s_fa9fe0b23f4c2b::t_a21578e7a594c1 59
+  s_fa9fe0b23f4c2b::t_2b665497a3f019 1-14,20-22,24,26-30,33,35-49,63-64
+  s_214219da72ea2b::t_e716a1c4ba62d1 31-32,34
+  s_fa9fe0b23f4c2b::t_9187450c52b443 15-19,23,25
+  s_fa9fe0b23f4c2b::t_ff376f2ddfefcc 50-58,60,65
+  s_fa9fe0b23f4c2b::t_d73408355963a2 61-62
+  s_fa9fe0b23f4c2b::t_f2c351723c461f 66
+integrations/inkos-adapter/README.md
+  s_fa9fe0b23f4c2b::t_d386828be2f967 15,53
+  s_fa9fe0b23f4c2b::t_ef653b711a8e08 76,78-91
+  s_fa9fe0b23f4c2b::t_62041381572ed1 1,3,5,7-12,14,16-31,33,35-42,44,46,48-52,54,57,60,62,64-67,69-75,77
+  s_fa9fe0b23f4c2b::t_1cbcc75e3e4e6c 68
+  s_fa9fe0b23f4c2b::t_71335ab71e2bb2 55-56,58-59,61,63
+  s_fa9fe0b23f4c2b::t_9573bcd42c5a6e 32,34,43,45,47
+services/gateway-api/app/api/novel.py
+  s_fa9fe0b23f4c2b::t_2aa031455b5d66 1-2,5-6,9-10,12,15-35,39-45,54-57,77-83,89-91,96-133
+  s_fa9fe0b23f4c2b::t_bbc79e7303ed13 46-50,52-53,58-70,72-76
+  s_fa9fe0b23f4c2b::t_52ee2d743fbbcb 51
+  s_fa9fe0b23f4c2b::t_e056585e62a64d 36-38
+  s_214219da72ea2b::t_ffb6a18ce10300 84-86,88,92-95
+  s_214219da72ea2b::t_0bc3a91a4dd309 87
+  s_fa9fe0b23f4c2b::t_6105b3bd5fec66 71
+  s_214219da72ea2b::t_19bacd55b6e5c3 8,14
+  s_fa9fe0b23f4c2b::t_3965537961b9bc 3-4,7,11,13
+.env.example
+  s_fa9fe0b23f4c2b::t_55bccd6b05bfaa 14
+  s_fa9fe0b23f4c2b::t_44c2d818f2f978 10-13,15
+apps/portal-web/lib/inkos-api.ts
+  s_fa9fe0b23f4c2b::t_850bdfed305545 181-198
+  s_fa9fe0b23f4c2b::t_92db7d233989d7 12
+  s_fa9fe0b23f4c2b::t_7c64b82ce5aab3 74-76
+  s_fa9fe0b23f4c2b::t_ebaab9e265d617 232-242
+  s_fa9fe0b23f4c2b::t_ac372626a77a18 23-45,58-59
+  s_fa9fe0b23f4c2b::t_7f52b06fff04eb 1-4
+  s_fa9fe0b23f4c2b::t_e05b2fc245aab3 16,93-98,148-154,159,163,178-180,199-205,208,229
+  s_fa9fe0b23f4c2b::t_9d549fa046b81b 5-11,13-15,17-22,46-57,60-73,77-92,99-105,118-119,132-147,155-158,160-162,164-177,206-207,209-228,230-231,243-245
+  s_fa9fe0b23f4c2b::t_a220520a22e549 106-117,120-131
+apps/portal-web/app/apps/novel/page.tsx
+  s_fa9fe0b23f4c2b::t_f536bd08db2b15 10,12
+apps/portal-web/app/apps/novel/workbench/page.tsx
+  s_fa9fe0b23f4c2b::t_b2d891f1dd54a3 1,4
+apps/portal-web/components/inkos-daemon-panel.tsx
+  s_fa9fe0b23f4c2b::t_32b70cd57de4f3 1-92
+apps/portal-web/lib/inkos-indexeddb-api.ts
+  s_fa9fe0b23f4c2b::t_398cacd2b50df3 105-114,117-118
+  s_fa9fe0b23f4c2b::t_e61ab66f5f925f 59-67
+  s_fa9fe0b23f4c2b::t_12f57f0e5ec6ba 79-80
+  s_fa9fe0b23f4c2b::t_9cc70df9225956 1-4,6,8-10,12,14-15,17-19,22,24,28-29,33-35,37-47,51-58,68-78,81-104,119-140,154-209,243-249,255-256,258,266-278
+  s_fa9fe0b23f4c2b::t_02d035389af0f1 5,7,11,16,20-21,25-27,30-32,36,48-50,115-116,141-153,210-242,250-254,257,259-265,279-280
+  s_fa9fe0b23f4c2b::t_8e70e888a00c6a 13
+apps/portal-web/lib/use-inkos-agent.ts
+  s_fa9fe0b23f4c2b::t_164a6e7b86b716 1-4,9-26,29-34,41-52,70-72,75,104-105,117-180,182-191,193-194,196-200,211,213-215,219-222,224-230,232-238,244-267
+  s_fa9fe0b23f4c2b::t_1fdfd1c6902cc3 27
+  s_fa9fe0b23f4c2b::t_64bfd1400b12cc 5,7,28,35-40,53-69,73-74,76-103,109-116,181,192,212,223,231,239-243
+  s_fa9fe0b23f4c2b::t_df3ad37dfe8c73 195,201-210
+  s_fa9fe0b23f4c2b::t_56c0bbeb91e175 6,8
+  s_fa9fe0b23f4c2b::t_369b3359ae5472 216-218
+apps/portal-web/lib/portal-model-config.ts
+  s_fa9fe0b23f4c2b::t_5fc664f271dbb5 112-119
+  s_fa9fe0b23f4c2b::t_12e717bccda7d1 57-72
+  s_fa9fe0b23f4c2b::t_f81421bf466a54 123,130-131,134-140,142-164
+  s_fa9fe0b23f4c2b::t_e41b3396c1625b 1-56,73-111,120-122,124-129,132-133,141,165-175
+apps/portal-web/lib/inkos-types.ts
+  s_fa9fe0b23f4c2b::t_b9e99fe10ede4f 41
+  s_fa9fe0b23f4c2b::t_51c4e1dc15e3a6 31-32
+  s_fa9fe0b23f4c2b::t_ae62e62ec5af65 9-19
+  s_fa9fe0b23f4c2b::t_542ea0257ddbd3 34-35,65,67-79,82-88,90-93,125
+  s_fa9fe0b23f4c2b::t_17efbb27010270 1,5-6,20-25,28,33,40,42,46,48-52,55-57,59-64,80,95-100,102-105,107-111,113-121,123-124,126-128,130
+apps/portal-web/components/inkos-workbench.tsx
+  s_fa9fe0b23f4c2b::t_826f4f06018d80 290-291
+  s_fa9fe0b23f4c2b::t_aa6912e43de825 281,287,292,299-303,306,312,314-315,320-324
+  s_fa9fe0b23f4c2b::t_d3966efa736c4a 520-525
+  s_fa9fe0b23f4c2b::t_14142c00d4c17a 223,231
+  s_fa9fe0b23f4c2b::t_44b844064046dc 30,59,61
+  s_fa9fe0b23f4c2b::t_0ec3c71d663260 56,58
+  s_fa9fe0b23f4c2b::t_446044e9681ff1 24,26,49,62-64,67,118,120,127,129,133,151,153,162-165,167,180-195,197-207,209-210,212,222,224,229,239-246,248-249,266-274,277,279,328-329,338,342,346-347,352,359,363,368,372-373,380,432,436,440-442,444-446,451,486,503,505-507,509,517-519,527-547,559-561,564-565,568-570,582-599,601-602,604,612-627,630-631,636,638-639,642-656,664-673,675-685,692,699,889,891-892
+  s_fa9fe0b23f4c2b::t_4314d08927f8b7 288,297-298
+  s_fa9fe0b23f4c2b::t_b4448bd5e2d867 637
+  s_fa9fe0b23f4c2b::t_d633a640152738 551
+  s_fa9fe0b23f4c2b::t_83f655d3cb3a26 196
+  s_fa9fe0b23f4c2b::t_301a8692ddef7d 307-309,316
+  s_fa9fe0b23f4c2b::t_cec0a3411830bc 6,18,25,27-29,31-32,34,36,38,40,43,45,48,51,53-55,60,65-66,109-116,134-138,152,156-159,168-179,208,211,225-226,257,263,319,343,364,384-390,393-406,409-431,450,452-454,457-485,488-496,571-581,605-611,629,632-635,687-688,690-691,693-694,697,702-888
+  s_fa9fe0b23f4c2b::t_606e43d4fbcb4b 282-286,289
+  s_fa9fe0b23f4c2b::t_ae93ab3730a040 353-357,361
+  s_fa9fe0b23f4c2b::t_f044f77190b9e5 548-550,552-557
+  s_fa9fe0b23f4c2b::t_5f7e12c159ca9e 132,147
+  s_fa9fe0b23f4c2b::t_e40c7908155969 252-256,258-262,265
+  s_fa9fe0b23f4c2b::t_40e6d246e3ee43 130
+  s_fa9fe0b23f4c2b::t_dce37ad6cdc7ea 3,35,37,39,41-42,44,46-47,52,80-81,87,96,99-100,119,121-125,128,161,166,213-215,217-218,220-221,228,230,234,247,275,327,339,348,351,360,367,369,381,435,437,443,447,511-512,558,562-563,600,890,909
+  s_fa9fe0b23f4c2b::t_d261fd84e31294 50,57
+  s_fa9fe0b23f4c2b::t_57d4c4be9951ed 337,341,344-345,358,362,365-366,379,383,433-434
+  s_fa9fe0b23f4c2b::t_3a8d47480747aa 510
+  s_fa9fe0b23f4c2b::t_91e2d59aca87b9 227
+  s_fa9fe0b23f4c2b::t_521750610e2e48 154-155,160
+  s_fa9fe0b23f4c2b::t_39b659e270c5b9 332-336,340
+  s_fa9fe0b23f4c2b::t_84d0137c24a326 131,139-146,148
+  s_fa9fe0b23f4c2b::t_8195cbaa57bd75 293-296
+  s_fa9fe0b23f4c2b::t_5159cf1593e1cf 374-378,382
+  s_fa9fe0b23f4c2b::t_f3ae037725ff82 313,317-318
+  s_fa9fe0b23f4c2b::t_fc7dd06e0e3df2 68-69,72-76
+  s_fa9fe0b23f4c2b::t_896761c1093265 216,219
+  s_fa9fe0b23f4c2b::t_364e7a560a03a8 657-658,660-663
+services/gateway-api/app/services/inkos_studio.py
+  s_fa9fe0b23f4c2b::t_b518ec0bf4ed66 140-150,153-168
+  s_fa9fe0b23f4c2b::t_b827c554e4f8ef 171-184,194,196
+  s_fa9fe0b23f4c2b::t_33e212e87b0014 210
+  s_fa9fe0b23f4c2b::t_c9e2f7314e08c8 72,74-128
+  s_fa9fe0b23f4c2b::t_a585b8ea362744 260
+  s_fa9fe0b23f4c2b::t_0805c1ed90e9a7 18
+  s_fa9fe0b23f4c2b::t_e925bdd1d881b0 214-222,231-233
+  s_fa9fe0b23f4c2b::t_d04efad81e1c9d 188
+  s_fa9fe0b23f4c2b::t_a4b07330c18859 3,9
+  s_fa9fe0b23f4c2b::t_e56e2c8431ec84 189
+  s_fa9fe0b23f4c2b::t_46affac2944828 6
+  s_fa9fe0b23f4c2b::t_ac56a6b64f666b 238,253-257
+  s_fa9fe0b23f4c2b::t_c3a1078d451729 1-2,4-5,7-8,10-17,19-29,131-139,151-152,169-170,185-187,190-193,195,197-209,211-213,223-230,234-237,252,258-259,261-297
+  s_fa9fe0b23f4c2b::t_618b3a261594de 30-71,73,129-130
+  s_fa9fe0b23f4c2b::t_561abe37ed4080 239-251
+apps/portal-web/components/inkos-radar-panel.tsx
+  s_fa9fe0b23f4c2b::t_75c8418440b049 1-66
+services/gateway-api/app/services/inkos_runtime.py
+  s_fa9fe0b23f4c2b::t_9e553d9e67c459 462-465,469-472,476-479,481-485
+  s_fa9fe0b23f4c2b::t_0b4b6dc85c3011 67-91,101-104
+  s_fa9fe0b23f4c2b::t_83085b9eb6c624 430
+  s_fa9fe0b23f4c2b::t_d266a5dc34113b 438,448,453,461,466-468,473-475,480
+  s_fa9fe0b23f4c2b::t_0509f46771fdec 402,408
+  s_fa9fe0b23f4c2b::t_8f4ddd9c7e6760 215-239,242-248
+  s_fa9fe0b23f4c2b::t_c10176ab514123 188-199
+  s_fa9fe0b23f4c2b::t_bfae3a3bf6f809 1-66,92-100,105-187,200-214,240-241,249-317,325-372,396-401,403-407,409-429,431-437,439-447,449-452,454-460,486-493
+  s_fa9fe0b23f4c2b::t_2517c8e759fcc9 318-324
+  s_fa9fe0b23f4c2b::t_a46227e026d40d 373-395
+apps/portal-web/lib/inkos-indexeddb.ts
+  s_fa9fe0b23f4c2b::t_641e6e15d9fa0f 91-115,122
+  s_fa9fe0b23f4c2b::t_0078ebf1df4152 404-405,408-417,419,425-568
+  s_fa9fe0b23f4c2b::t_8eb413c1af1f78 806-811
+  s_fa9fe0b23f4c2b::t_5769e697c04957 765-768,773,776
+  s_fa9fe0b23f4c2b::t_5552521d6041c3 82-90,121
+  s_fa9fe0b23f4c2b::t_8db05c0909b35d 777-778
+  s_fa9fe0b23f4c2b::t_04a0c8c2d8c572 755-759
+  s_fa9fe0b23f4c2b::t_a78a13b9a4109e 774-775,783-789
+  s_fa9fe0b23f4c2b::t_3d702a7e1d21b2 797-801
+  s_fa9fe0b23f4c2b::t_2350e25c4821db 132
+  s_fa9fe0b23f4c2b::t_53a9d6c2b3a3b0 790-791
+  s_fa9fe0b23f4c2b::t_abd779caf8a691 391-403,406-407,418,420-424
+  s_fa9fe0b23f4c2b::t_e7d5dfb7b8bc93 3-14
+  s_fa9fe0b23f4c2b::t_a346bb81952403 569-750
+  s_fa9fe0b23f4c2b::t_fc420b4c20958f 186-209,215,220-222,226-228
+apps/portal-web/components/inkos-analytics-panel.tsx
+  s_fa9fe0b23f4c2b::t_36762d8832247a 1-49
+services/gateway-api/app/tests/test_novel_api.py
+  s_fa9fe0b23f4c2b::t_58280d63594fc2 1-32,37,39-65,67-84
+  s_fa9fe0b23f4c2b::t_9d133606b12bc4 66
+  s_fa9fe0b23f4c2b::t_cafe29466bc837 38
+  s_fa9fe0b23f4c2b::t_be1ff745916824 33-36
+apps/portal-web/app/apps/novel/layout.tsx
+  s_fa9fe0b23f4c2b::t_227ba09d3298d8 1-5
+.gitignore
+  s_fa9fe0b23f4c2b::t_30cfd4303d91cb 18-19
+apps/portal-web/lib/inkos-client.ts
+  s_fa9fe0b23f4c2b::t_6f67d8af5408d8 1-2,14-16
+  s_fa9fe0b23f4c2b::t_01d2081ac398a8 3-13
+apps/portal-web/lib/use-inkos-daemon.ts
+  s_fa9fe0b23f4c2b::t_07e1f89d8b4c67 117-122,128
+  s_fa9fe0b23f4c2b::t_9d3abd02284010 92
+  s_fa9fe0b23f4c2b::t_ad7d2cdb59ceec 1-28,30-46,51-91,93-116,123-127,129-130
+  s_fa9fe0b23f4c2b::t_fc91c1eff9c83d 47-50
+  s_fa9fe0b23f4c2b::t_1ecdaa32541102 29
+services/gateway-api/app/main.py
+  s_fa9fe0b23f4c2b::t_9f886ba4f48ee4 5-6
+  s_fa9fe0b23f4c2b::t_d356238cebfa01 32-36
+  s_fa9fe0b23f4c2b::t_5ffab5016e5f82 55
+apps/portal-web/app/settings/keys/page.tsx
+  s_fa9fe0b23f4c2b::t_39504d9f797300 138-145,149
+  s_fa9fe0b23f4c2b::t_0de0883d0b548d 147-148
+  s_fa9fe0b23f4c2b::t_72cd1a334e4a6f 3
+  s_fa9fe0b23f4c2b::t_e883cce59f2b63 8
+  s_fa9fe0b23f4c2b::t_b12c838fa7f168 208-209,211-247
+  s_fa9fe0b23f4c2b::t_e331dfdb31cff0 157-159,161
+apps/portal-web/lib/use-inkos-sse.ts
+  s_fa9fe0b23f4c2b::t_bfa70b5a109d53 17-38,43-44,59-61,64,67-68,73-74,78-79
+  s_fa9fe0b23f4c2b::t_12c40c961d5344 39-42
+  s_fa9fe0b23f4c2b::t_99b54583740ada 1-4,6-16,45-58,62-63,65-66,69-72,75-77,80-88
+  s_fa9fe0b23f4c2b::t_ea9b5517420b01 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "99b63407cf51c648514892a75083813005ac822d",
+  "prompts": {},
+  "humans": {
+    "h_d083fb1648bfd3": {
+      "author": "sxy <545231960@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_214219da72ea2b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "14476dd8-3504-41bf-85a3-bd2c8d9910a0",
+        "model": "default"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    },
+    "s_fa9fe0b23f4c2b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "ffe5332b-b50c-4506-988b-fcf32f457f70",
+        "model": "default"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
