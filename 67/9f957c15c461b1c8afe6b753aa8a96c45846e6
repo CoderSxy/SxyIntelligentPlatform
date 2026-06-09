@@ -1,0 +1,32 @@
+services/gateway-api/app/api/admin.py
+  s_02f41e09a10825::t_b9ffc24227a747 1,4-15,22-30,43-54,58-125,129-172,174-206
+services/gateway-api/app/models/schemas.py
+  s_02f41e09a10825::t_3b30f2b714bff1 54-72
+  s_02f41e09a10825::t_37977153b4510c 37-46
+services/gateway-api/app/models/__init__.py
+  s_02f41e09a10825::t_a2181e7a5ca3c6 11-13,15,23,36-38,40,48
+services/gateway-api/app/services/auth_repository.py
+  s_02f41e09a10825::t_5512d77f19acca 180-185
+services/gateway-api/app/services/repository.py
+  s_02f41e09a10825::t_4f735ca350aad5 179-181,183,187-224
+  s_02f41e09a10825::t_97ee2fff196eba 13
+  s_02f41e09a10825::t_c86a0e84cf78d2 157-173
+services/gateway-api/app/tests/test_admin_api.py
+  s_02f41e09a10825::t_04cbcf1f87edbb 1-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "679f957c15c461b1c8afe6b753aa8a96c45846e6",
+  "prompts": {},
+  "sessions": {
+    "s_02f41e09a10825": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "c37a63f1-a583-4111-88b8-26d48fc03736",
+        "model": "default"
+      },
+      "human_author": "sxy <545231960@qq.com>"
+    }
+  }
+}
